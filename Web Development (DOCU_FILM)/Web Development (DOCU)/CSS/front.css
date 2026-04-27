@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+body {
+  background: #f0eeea;
+}
+
+/* INTRO SCREEN */
+#intro {
+  position: fixed;
+  inset: 0;
+  background: #12121a;
+  color: #f0eeea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: 0.6s ease;
+}
+
+#intro.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.intro-content {
+  text-align: center;
+}
+
+.intro-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+#intro h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#intro p {
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+#enterBtn {
+  padding: 12px 28px;
+  border: none;
+  background: #f4c542;
+  color: #12121a;
+  font-weight: 700;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#enterBtn:hover {
+  background: #e05252;
+  color: #fff;
+}
+
+/* MAIN CONTENT */
+#mainContent {
+  opacity: 0;
+  transition: 0.6s ease;
+}
+
+#mainContent.show {
+  opacity: 1;
+}
+
+/* SIMPLE HERO */
+#L_P {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
